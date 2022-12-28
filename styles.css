@@ -1,0 +1,72 @@
+body{
+    width: auto;
+    height: 100px;
+    display:grid;
+   grid-template-columns: 2fr 2fr;
+    background-color:green;
+
+
+}
+.uno{ 
+    width: auto;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+}
+.dos{
+    width: auto;
+    height: 40px;
+     display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   background-color: black;
+}
+.dos :hover {
+    background-color: green;
+    border-radius: 70px;
+    transition: all 0.5s;
+    
+}
+.tres{
+     width: auto;
+     height: 40px;
+     
+}
+@media screen and (max-width:800px) {
+    body{
+        display: block;
+        text-align: center;
+    }
+    .tres{
+        display: block;
+        text-align: left;
+    }
+}
+@media screen and (max-width:400px) {
+    body{
+        display: block;
+        text-align: center;
+    }
+    .uno{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 100px;
+    }
+    .dos{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        grid-template-rows: 3fr 3fr 3fr 3fr 3fr;
+        grid-template-columns: 1fr;
+    }
+    .tre{
+        width: 100px;
+        height: 200px;
+    }
+}
